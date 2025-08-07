@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 2</title>
+    <style>
+        .style{
+            color: whitesmoke;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM manipulation</h1>
+    <h2>Attributes</h2>
+    <dd>You can manipulate HTML Attribute using the DOM. Here's how you can get, set,remove and check attribute of element</dd>
+    <h3>1) Get an Attribute:-</h3>
+    <dd>.getAttribute("attributeName") // to get the attribute value</dd>
+
+    <h3>2) Set an Attribute:-</h3>
+    <dd>.setAttribue("AttributeName", "value) //to set the attribute value</dd>
+
+    <h3>3) Remove an attribute:-</h3>
+    <dd>.removeAttribute("AttributeName") //to remove an attribute</dd>
+
+    <h3>Check if Attribute exist:-</h3>
+    <dd>.hasAttribute("AttributeName")</dd>
+
+    <img id="bmwImg" src="bmw.jpg" alt="BMW image">
+
+    <h2 class="style">Accessing Styling</h2>
+    <dd>Using node.style we can access the style property of an element. </dd>
+
+    <h2>Insert Element</h2>
+    <dd>In Js, you can insert a new element but first have to create it using Js</dd>
+
+    <h3>i) Create a new Element</h3>
+    <div>let newEl = document.createElement("p");</div>
+    <div>newEl.textContent = "This  is a new paragraph"</div>
+
+    <h3>ii) Insert Method:-</h3>
+    <ul>
+        <li>appendChild():-</li>
+        <dd>Add a child at the end of parent Syntax: document.parent.appendChild(newEl)</dd>
+
+        <li>append()</li>
+        <dd>Just Like appendChild() but can also Add textnodes and multiple elements, Syntax: parent.append("newEl", "Some text")</dd>
+
+        <li>prepend():-</li>
+        <dd>Insert at the beginning of parent Element, Syntax: parent.prepend(newEl)</dd>
+
+        <li>before():-</li>
+        <dd>Insert before a specified element, Syntax: target.before(newEl)</dd>
+
+        <li>after()</li>
+        <dd>Insert after a specified element, Syntax: target.after(newEl)</dd>
+
+        <li>insertBefore():-</li>
+        <dd>Insert a node before a reference child of a specified parent, Syntax: parent.insertBefore(newEl, existingChild)</dd>
+
+    </ul>
+    <div id="container">
+        <p>First paragraph</p>
+    </div>
+
+    <h2>4) Deleting Element</h2>
+    <h4>element.remove()</h4>
+    <dd>this is the easiest and modern way to remove an element directly
+        <dd>let paras = document.querySelector("p"); element.remove();</dd>
+    </dd>
+
+    <h4>parent.removeChild(child)</h4>
+    <dd>This method will work in all browser(including older one)</dd>
+    <dd>let parent = document.querySeclector("div");</dd>
+    <dd>let para = parent.querySelector("p")</dd>
+    <dd>parent.removeChild(para);</dd>
+
+    <script src="script.js"></script>
+</body>
+</html>

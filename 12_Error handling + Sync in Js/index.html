@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+
+<body>
+    <h1>Error Handling :-</h1>
+    <dd>Error handling in Js is done using the try...catch block. It allows you to gracefully handle the errors instead
+        of letting your code crash.</dd>
+    <h4>Syntax</h4>
+    <dd>try{</dd>
+    <dd>&nbsp;&nbsp;&nbsp;&nbsp;...normal code</dd>
+    <dd>}catch(err){</dd>
+    <dd>&nbsp;&nbsp;&nbsp;&nbsp;...handling error</dd>
+    <dd>}</dd>
+
+    <h1>Sync in JavaScript</h1>
+    <h2>Synchronous:-</h2>
+    <dd>Synchronous in javaScript means, code is executed line by line in order. Each task must finish before the next start.</dd>
+    <dd>&nbsp;&nbsp;If one line takes time the entire program waits for it to complete.Example...</dd>
+    <br>
+    <dd>console.log("Task 1")</dd>
+    <dd>console.log("Task 2")</dd>
+    <dd>console.log("Task 3")</dd>
+    
+    <h2>Asynchronous:- </h2>
+    <dd>(Async) programming allows multiple tasks to run without waiting for eachother</dd>
+    <dd>&nbsp;&nbsp;It let javaScript handle long running operation (like API calls, timer, file reading) without blocking the rest of code.Example...</dd>
+    <br>
+    <dd>console.log("START");</dd>
+    <dd>setTimeout(() =>{</dd>
+    <dd>&nbsp;&nbsp;&nbsp;&nbsp;console.log("Assign task")</dd>
+    <dd>}, 2000);</dd>
+    <dd>console.log("END")</dd>
+    <br>
+    <div>OUTPUT: </div>
+    <dd>START</dd>
+    <dd>END</dd>
+    <dd>asign task</dd>
+    <script src="script.js"></script>
+</body>
+
+</html>

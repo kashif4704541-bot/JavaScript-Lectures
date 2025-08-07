@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Js</title>
+    <style>
+        #box1{
+            height: 100px;
+            width: 100px;
+            background-color: dodgerblue;
+            color: whitesmoke;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Events in Js</h2>
+    <dd>An event is something that happen on a webpage. Like a button being clicked, a key being pressed or the page loading</dd>
+    <br>
+    <div>JavaScript let you "listen" for these events and runn some code when they happen</div>
+
+    <h3>Most Common Events</h3>
+    <ul>
+        <li>click</li>
+        <li>mouseover</li>
+        <li>mouseout</li>
+        <li>keydown</li>
+        <li>Submit</li>
+        <li>load</li>
+    </ul>
+
+    <h3>Event handling in Js</h3>
+    <div>node.event = () =>{</div>
+    <dd>&nbsp;//Handle here</dd>
+    <div>}</div>
+
+    <h2>Event Objects:-</h2>
+    <dd>It is a special type of object that has details about the event</dd>
+    <br>
+    <div>All event handlers have access to the event object's properties and method</div>
+    <dd>&nbsp;node.event =(eventName) =>{</dd>
+    <dd>&nbsp;&nbsp;&nbsp;//handle here</dd>
+    <dd>&nbsp;}</dd>
+    <div>e.target,e.type,e.clientX,e.clientY.</div>
+
+    <h2>Event listeners:-</h2>
+    <dd>An event in Js lets you run some code when an event (like a hover, key press, click etc) happen on an element</dd>
+    <br>
+    <div>node.addEventListener(event, callback)</div>
+    <div>node.removeEventListener(event, callback)</div>
+    <button id="btn1">Click me!</button>
+    <br>
+    <button id="btn2">Click!</button>
+
+    <div id="box1">This is a div box</div>
+    <script src="script.js"></script>
+</body>
+</html>
